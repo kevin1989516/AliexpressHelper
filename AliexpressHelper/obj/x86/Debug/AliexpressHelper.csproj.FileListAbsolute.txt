@@ -1,0 +1,18 @@
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.pdb
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\bin\Debug\HtmlAgilityPack.dll
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csprojResolveAssemblyReference.cache
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Main.resources
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Properties.Resources.resources
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csproj.GenerateResource.Cache
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.exe
+d:\用户目录\documents\visual studio 2010\Projects\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.pdb
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.exe
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.pdb
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csprojResolveAssemblyReference.cache
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Main.resources
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Properties.Resources.resources
+E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csproj.GenerateResource.Cache
+E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe
+E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.pdb
+E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe.config

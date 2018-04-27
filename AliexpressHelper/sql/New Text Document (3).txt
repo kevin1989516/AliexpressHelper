@@ -1,0 +1,3 @@
+Id	KeyWords	CreateTime
+2	ipad 4 Touch screen	2018-04-27 00:00:00.000
+3	ipad 2 digitizer	2018-04-27 00:00:00.000

@@ -1,0 +1,18 @@
+  {
+      "name": "linkedin job crawler",
+      "version": "1.0",
+      "permissions":["tabs","<all_urls>","http://localhost/"],
+      "browser_action": {
+        "default_icon": "icon.png"
+      },
+      "background": {
+        "scripts": ["jquery-1.4.1.min.js","background.js"]
+      },
+      "content_scripts": [
+        {
+          "matches": ["*://www.aliexpress.com/*"],
+          "js" : ["jquery-1.4.1.min.js","contentScript.js"]
+        }
+      ],
+      "manifest_version": 2
+    }
