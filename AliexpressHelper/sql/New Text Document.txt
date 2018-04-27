@@ -1,0 +1,37 @@
+USE [qds167337249_db]
+GO
+
+/****** Object:  Table [dbo].[ProductListing]    Script Date: 4/27/2018 3:58:29 PM ******/
+DROP TABLE [dbo].[ProductListing]
+GO
+
+/****** Object:  Table [dbo].[ProductListing]    Script Date: 4/27/2018 3:58:29 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ProductListing](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CreateYear] [int] NOT NULL,
+	[CreateMonth] [int] NOT NULL,
+	[CreateDay] [int] NOT NULL,
+	[CreateTime] [datetime] NOT NULL,
+	[ProductOrder] [int] NOT NULL,
+	[CompanyName] [nvarchar](256) NOT NULL,
+	[PriceFrom] [decimal](18, 2) NOT NULL,
+	[PriceTo] [decimal](18, 2) NOT NULL,
+	[Feedback] [int] NOT NULL,
+	[OrdersQty] [int] NOT NULL,
+	[ProudctLink] [nvarchar](max) NOT NULL,
+	[KeyWordsId] [int] NOT NULL,
+ CONSTRAINT [PK_ProductListing] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+

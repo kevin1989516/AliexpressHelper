@@ -1,0 +1,27 @@
+USE [qds167337249_db]
+GO
+
+/****** Object:  Table [dbo].[Search_KeyWords]    Script Date: 4/27/2018 3:58:41 PM ******/
+DROP TABLE [dbo].[Search_KeyWords]
+GO
+
+/****** Object:  Table [dbo].[Search_KeyWords]    Script Date: 4/27/2018 3:58:41 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Search_KeyWords](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[KeyWords] [nvarchar](50) NOT NULL,
+	[CreateTime] [datetime] NOT NULL,
+ CONSTRAINT [PK_Search_KeyWords] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+

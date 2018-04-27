@@ -1,0 +1,5 @@
+﻿select convert(nvarchar(100),b.CreateTime,110) as [时间],b.KeyWords as [关键词],a.ProductOrder as [Listing排序],a.CompanyName as [公司],
+a.PriceFrom as [价格From], a.PriceTo as [价格To], a.Feedback as [评论], a.OrdersQty as [订单量],
+a.ProudctLink as [产品链接]
+from ProductListing  as a
+inner join Search_KeyWords as b on a.KeyWordsId = b.Id
