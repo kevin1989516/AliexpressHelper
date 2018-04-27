@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using HtmlAgilityPack;
-using AliexpressHelper.Data;
+using DataCenter;
 
 namespace AliexpressHelper
 {
@@ -24,18 +24,19 @@ namespace AliexpressHelper
 
         string GetHtml(string url) 
         {
-            
-            url = System.Web.HttpUtility.UrlEncode(url);
-            HttpHelper.post("data=", "http://localhost/newrelictest/WebForm1.aspx?action=setdata");
-            HttpHelper.post(string.Format("url=" + url), "http://localhost/newrelictest/WebForm1.aspx?action=seturl");
+            string data = string.Empty;
 
-            string data = HttpHelper.get("http://localhost/newrelictest/WebForm1.aspx?action=getdata");
-            while (data == string.Empty)
-            {
-                System.Threading.Thread.Sleep(1000);
-                data = HttpHelper.get("http://localhost/newrelictest/WebForm1.aspx?action=getdata");
-            }
+            //url = System.Web.HttpUtility.UrlEncode(url);
+            //HttpHelper.post("data=", "http://localhost/newrelictest/WebForm1.aspx?action=setdata");
+            //HttpHelper.post(string.Format("url=" + url), "http://localhost/newrelictest/WebForm1.aspx?action=seturl");
 
+            //data = HttpHelper.get("http://localhost/newrelictest/WebForm1.aspx?action=getdata");
+            //while (data == string.Empty)
+            //{
+            //    System.Threading.Thread.Sleep(1000);
+            //    data = HttpHelper.get("http://localhost/newrelictest/WebForm1.aspx?action=getdata");
+            //}
+            data = HttpHelper.get(url);
             return data;
         }
 
@@ -148,8 +149,7 @@ namespace AliexpressHelper
                     }
                     
                     list.Add(product);
-
-                    db.ProductListings.InsertOnSubmit(product);
+                    db.ProductListing.InsertOnSubmit(product);
                     db.SubmitChanges();
                     i++;
                 }
@@ -167,7 +167,7 @@ namespace AliexpressHelper
 
         }
 
-        alieexpressDataContext db = new alieexpressDataContext();
+        aliDataContext db = new aliDataContext();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -175,14 +175,13 @@ namespace AliexpressHelper
             this.Enabled = false;
             try
             {
-
-                List<Search_KeyWord> list = db.Search_KeyWords.ToList();
-                foreach(Search_KeyWord keywords in list)
+                var list = db.Search_KeyWords.ToList();
+                foreach(Search_KeyWords keywords in list)
                 {
                     Search(keywords.KeyWords, keywords.Id);
                 }
 
-                dataGridView1.DataSource = db.ProductListings.ToList();
+                dataGridView1.DataSource = db.ProductListing.ToList();
                 
             }
             catch (Exception ex) 

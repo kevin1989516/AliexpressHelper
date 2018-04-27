@@ -1,0 +1,7 @@
+E:\dev\AliexpressHelper\express\bin\express.dll
+E:\dev\AliexpressHelper\express\bin\express.pdb
+E:\dev\AliexpressHelper\express\obj\Debug\express.dll
+E:\dev\AliexpressHelper\express\obj\Debug\express.pdb
+E:\dev\AliexpressHelper\express\bin\DataCenter.dll
+E:\dev\AliexpressHelper\express\bin\DataCenter.pdb
+E:\dev\AliexpressHelper\express\obj\Debug\express.csprojResolveAssemblyReference.cache

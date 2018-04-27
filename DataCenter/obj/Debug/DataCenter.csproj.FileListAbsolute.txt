@@ -1,0 +1,5 @@
+E:\dev\AliexpressHelper\DataCenter\bin\Debug\DataCenter.dll.config
+E:\dev\AliexpressHelper\DataCenter\bin\Debug\DataCenter.dll
+E:\dev\AliexpressHelper\DataCenter\bin\Debug\DataCenter.pdb
+E:\dev\AliexpressHelper\DataCenter\obj\Debug\DataCenter.dll
+E:\dev\AliexpressHelper\DataCenter\obj\Debug\DataCenter.pdb

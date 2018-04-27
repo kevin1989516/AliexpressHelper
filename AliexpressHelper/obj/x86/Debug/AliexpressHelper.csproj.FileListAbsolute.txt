@@ -16,3 +16,15 @@ E:\project\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.cspr
 E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe
 E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.pdb
 E:\project\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe.config
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe.config
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Main.resources
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.Properties.Resources.resources
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csproj.GenerateResource.Cache
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.exe
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\AliexpressHelper.pdb
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\HtmlAgilityPack.dll
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.csprojResolveAssemblyReference.cache
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.exe
+E:\dev\AliexpressHelper\AliexpressHelper\obj\x86\Debug\AliexpressHelper.pdb
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\DataCenter.dll
+E:\dev\AliexpressHelper\AliexpressHelper\bin\Debug\DataCenter.pdb

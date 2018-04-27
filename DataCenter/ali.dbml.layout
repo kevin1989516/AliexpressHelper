@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ali">
+  <DataContextMoniker Name="/aliDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0c98f721-eef0-4f9b-b28a-6d608578e85e" absoluteBounds="2.25, 3.25, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/aliDataContext/ProductListing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b704f9aa-2ead-4b7f-868e-f097099998e2" absoluteBounds="2.265, 3.71, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30ff80ff-68b7-4cc5-a552-afa50f16e2e6" absoluteBounds="1.75, 2.625, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/aliDataContext/Search_KeyWords" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d9b9483-609e-4052-b885-eec7b9f07888" absoluteBounds="1.7650000000000001, 3.085, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

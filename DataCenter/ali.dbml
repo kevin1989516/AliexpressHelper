@@ -1,13 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qds167337249_db" Class="alieexpressDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=qds167337249_db;Integrated Security=True" SettingsObjectName="AliexpressHelper.Properties.Settings" SettingsPropertyName="qds167337249_dbConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Search_KeyWords" Member="Search_KeyWords">
-    <Type Name="Search_KeyWord">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="KeyWords" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ProductListing" Member="ProductListings">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qds167337249_db" Class="aliDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=qds167337249.my3w.com;Initial Catalog=qds167337249_db;Persist Security Info=True;User ID=qds167337249" SettingsObjectName="DataCenter.Properties.Settings" SettingsPropertyName="qds167337249_dbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ProductListing" Member="ProductListing">
     <Type Name="ProductListing">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="CreateYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -22,6 +15,13 @@
       <Column Name="OrdersQty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ProudctLink" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="KeyWordsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Search_KeyWords" Member="Search_KeyWords">
+    <Type Name="Search_KeyWords">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KeyWords" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

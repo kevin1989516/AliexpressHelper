@@ -37,7 +37,7 @@
   <ItemGroup>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\HtmlAgilityPack.dll</HintPath>
+      <HintPath>DLL\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,11 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\alieexpress.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>alieexpress.dbml</DependentUpon>
-    </Compile>
     <Compile Include="HttpHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -67,10 +62,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="app.config" />
-    <None Include="Data\alieexpress.dbml.layout">
-      <DependentUpon>alieexpress.dbml</DependentUpon>
-    </None>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,11 +75,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Data\alieexpress.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>alieexpress.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +87,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\HtmlAgilityPack.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataCenter\DataCenter.csproj">
+      <Project>{C06704C7-537E-472C-A01B-EB626992A1B8}</Project>
+      <Name>DataCenter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
