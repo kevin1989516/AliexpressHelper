@@ -13,10 +13,14 @@ namespace express
         public List<Search_KeyWords> ListSearch_KeyWords { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) 
+            {
+                aliDataContext db = new aliDataContext();
+                GridView1.DataSource = db.ProductListing.ToList();
+                GridView1.DataBind();
+            }
 
-            aliDataContext db = new aliDataContext();
-            GridView1.DataSource = db.ProductListing.ToList();
-            GridView1.DataBind();
+
             
 
         }
@@ -38,6 +42,39 @@ namespace express
                 }
             }
             
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+
+            aliDataContext db = new aliDataContext();
+            var list = from b in db.ProductListing select b;
+            if (!string.IsNullOrEmpty(txtCompany.Text))
+            {
+                list = list.Where(c => c.CompanyName == txtCompany.Text);
+            }
+            if (!string.IsNullOrEmpty(txtKewWords.Text))
+            {
+                if (ListSearch_KeyWords == null)
+                {
+                    ListSearch_KeyWords = db.Search_KeyWords.ToList();
+                }
+                Search_KeyWords obj = ListSearch_KeyWords.Find(delegate(Search_KeyWords target)
+                { return target.Id.ToString() == txtKewWords.Text; });
+                int KeyWordsId = 0;
+                if (obj != null)
+                {
+                    KeyWordsId = obj.Id;
+                }
+                if(KeyWordsId > 0)
+                {
+                    list = list.Where(c => c.KeyWordsId == KeyWordsId);
+                }
+
+                
+            }
+            GridView1.DataSource = list.ToList();
+            GridView1.DataBind();
         }
     }
 }
